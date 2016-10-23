@@ -9,7 +9,7 @@ public class ReadPropertiesUtil {
 		Properties props = null;
 		String path = this.getClass().getResource("").getPath();
 		path = path.replaceFirst("/", "");
-		path = path.replaceAll("/classes/library/", "");
+		path = path.replaceAll("/classes/utils/", "");
 		path = path + "/config.properties";
 		props = new Properties();
 		File file = new File(path);
